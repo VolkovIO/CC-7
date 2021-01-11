@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Edit</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+</head>
+<body>
+<h1> Редактирование вопросов раздела CC-7</h1>
+<hr>
+<label>Удаление по ID</label>
+<input id="del">
+<button type="button" class="btn btn-danger" onclick="deleteTask()">Delete</button>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Add New Task
+</button>
+<hr>
+<div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">New Question</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="id-name" class="col-form-label">UUID:</label>
+                        <input type="text" class="form-control" id="id-name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="theme" class="col-form-label">Themee</label>
+                        <input type="text" class="form-control" id="theme">
+                    </div>
+                    <div class="mb-3">
+                        <label for="description" class="col-form-label">Description</label>
+                        <textarea class="form-control" id="description"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mark" class="col-form-label">Mark</label>
+                        <input type="number" class="form-control" id="mark">
+                    </div>
+                    <div class="mb-3">
+                        <label for="rightanswer" class="col-form-label text-success">RightAnswer</label>
+                        <input type="text" class="form-control" id="rightanswer">
+                    </div>
+                    <div class="mb-3">
+                        <label for="wronganswer1" class="col-form-label text-danger">WrongAnswer1:</label>
+                        <input type="text" class="form-control" id="wronganswer1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="wronganswer2" class="col-form-label text-danger">WrongAnswer2:</label>
+                        <input type="text" class="form-control" id="wronganswer2">
+                    </div>
+                    <div class="mb-3">
+                        <label for="wronganswer3" class="col-form-label text-danger">WrongAnswer3:</label>
+                        <input type="text" class="form-control" id="wronganswer3">
+                    </div>
+                    <div class="mb-3">
+                        <label for="chapter" class="col-form-label">Chapter:</label>
+                        <select type="text" class="form-control" id="chapter">
+                            <option>I</option>
+                            <option>II</option>
+                            <option>III</option>
+                            <option>IV</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary" id="anq">Add new Questions</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid bg-white "></div>
+<table class="table bg-white table-striped">
+    <thead>
+    <tr>
+        <th class="col-1">UUID</th>
+        <th scope="col">Theme</th>
+        <th class="col-5 text-center">Description</th>
+        <th scope="col">Mark</th>
+        <th scope="col" class="text-success">RightAnswer</th>
+        <th scope="col">WrngAnswr1</th>
+        <th scope="col">WrngAnswr2</th>
+        <th scope="col">WrngAnswr3</th>
+        <th scope="col">chapter</th>
+        <!--            <th>Edit</th>-->
+        <!--            <th>Delete</th>-->
+    </tr>
+    </thead>
+    <tbody id="admin_table">
+    </tbody>
+</table>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+<script src="../edit.js"></script>
+</body>
+</html>

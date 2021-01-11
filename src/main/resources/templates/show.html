@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Show</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+</head>
+<body>
+<h1> POST JSON запрос CC-7</h1>
+<hr>
+<div class="container"></div>
+<table border="1">
+    <thead>
+    <tr>
+        <td >Пример</td>
+<!--        <td class="col-5">Запрос</td>-->
+<!--        <td class="col-1"Кнопка</td>-->
+<!--        <td>Результат</td>-->
+    </tr>
+    <tr></tr><tr></tr><tr></tr>
+    </thead>
+
+    <tbody >
+    <tr>
+        <td>
+            {
+            "uuid": "22",
+            "description": "dddd",
+            "incorrectAnswer1": "2",
+            "incorrectAnswer2": "3",
+            "incorrectAnswer3": "4",
+            "mark": "3",
+            "rightAnswer": "1",
+            "shortName": "d1",
+            "typeOfTask": "SingleSelectAnswer"
+            }
+        </td>
+    </tr>
+    <tr><td><hr></td></tr>
+    <tr>
+        <td>
+            <textarea id="rest"  class="container" style="height: 300px">
+{
+    "uuid":    "112222",
+    "description": "dddd",
+    "incorrectAnswer1": "2",
+    "incorrectAnswer2": "3ww",
+    "incorrectAnswer3": "4",
+    "mark": "3",
+    "rightAnswer": "1",
+    "shortName": "d1",
+    "typeOfTask": "SingleSelectAnswer"
+}
+            </textarea>
+
+
+        </td>
+    </tr>
+    <tr>
+        <td><button id="btn" class="btn btn-primary" type="button">Оправить</button></td>
+    </tr>
+    <tr>
+        <td><label id="result">Вывод результата</label></td>
+    </tr>
+    </tbody>
+</table>
+</div>
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+<script src="../show.js"></script>
+</body>
+</html>
